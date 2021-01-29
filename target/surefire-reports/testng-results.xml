@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-28T18:15:16Z" name="Local" finished-at="2021-01-28T18:17:36Z" duration-ms="140502">
+    <groups>
+    </groups>
+    <test started-at="2021-01-28T18:15:16Z" name="LocalTest" finished-at="2021-01-28T18:17:36Z" duration-ms="140502">
+      <class name="com.browserstack.run_local_test.LocalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.browserstack.run_local_test.LocalTest@13c9d689]" started-at="2021-01-28T23:45:16Z" name="setUp" finished-at="2021-01-28T23:45:35Z" duration-ms="19298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:com.browserstack.run_local_test.LocalTest@13c9d689]" started-at="2021-01-28T23:45:35Z" name="test" finished-at="2021-01-28T23:47:32Z" duration-ms="116627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.run_local_test.LocalTest@13c9d689]" started-at="2021-01-28T23:47:32Z" name="tearDown" finished-at="2021-01-28T23:47:36Z" duration-ms="4571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.browserstack.run_local_test.LocalTest -->
+    </test> <!-- LocalTest -->
+  </suite> <!-- Local -->
+</testng-results>
