@@ -28,7 +28,10 @@ public class BrowserStackTestNGTest {
     JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_parallel_test/parallel.conf.json"));
     JSONArray envs = (JSONArray) config.get("environments");
 
+    String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
     DesiredCapabilities capabilities = new DesiredCapabilities();
+    
+    capabilities.setCapability("build", buildName); 
 
     Map<String, String> envCapabilities = (Map<String, String>) envs.get(Integer.parseInt(deviceIndex));
     Iterator it = envCapabilities.entrySet().iterator();

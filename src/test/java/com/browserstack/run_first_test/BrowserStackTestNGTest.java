@@ -27,7 +27,11 @@ public class BrowserStackTestNGTest {
     JSONObject config = (JSONObject) parser.parse(new FileReader("src/test/resources/com/browserstack/run_first_test/first.conf.json"));
     JSONArray envs = (JSONArray) config.get("environments");
 
+    String buildName = System.getenv("BROWSERSTACK_BUILD_NAME");
     DesiredCapabilities capabilities = new DesiredCapabilities();
+    
+    capabilities.setCapability("build", buildName); 
+
 
     Map<String, String> envCapabilities = (Map<String, String>) envs.get(0);
     Iterator it = envCapabilities.entrySet().iterator();
